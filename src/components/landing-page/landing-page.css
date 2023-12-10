@@ -1,0 +1,253 @@
+/* NAVBAR */
+
+.navbar {
+  margin: 0 2rem 2rem 2rem;
+  max-width: 1200px;
+  background-image: url("/hero-background.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+.nav {
+  width: 100%;
+  padding-top: 2rem;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.nav-links {
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.navbar-links {
+  display: flex;
+  flex-direction: row;
+  list-style: none;
+  gap: 25px;
+  color: var(---color-2--);
+}
+
+.link {
+  cursor: pointer;
+  font-family: "Roboto", sans-serif;
+  font-family: Roboto;
+  font-size: 1rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  text-decoration: none;
+  color: var(---color-2--);
+}
+
+.link:hover {
+  border-bottom: 4px solid var(---color-1--);
+}
+
+.cta-launch {
+  width: 150px;
+  height: 50px;
+  border-radius: 50px;
+  cursor: pointer;
+  border: 1px solid var(---color-1--);
+  background-color: transparent;
+  color: var(---color-1--);
+  font-family: "Roboto", sans-serif;
+  font-weight: 700;
+}
+
+.cta-launch-link {
+  text-decoration: none;
+  color: #fff;
+}
+
+.cta-launch:hover {
+  background-color: var(---color-1--);
+  color: var(---color-2--);
+}
+
+.hero {
+  margin: 3rem;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.hero-text {
+  text-align: center;
+  color: white;
+  max-width: 650px;
+  position: relative;
+  bottom: 10%;
+}
+
+.hero-text h1 {
+  text-align: center;
+  font-family: "Bangers";
+  font-size: 5rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  text-align: center;
+}
+
+.hero-text span {
+  color: var(---color-1--);
+}
+
+/* FEATURES */
+.feature {
+  margin: 2rem;
+}
+
+.feature h1 {
+  text-align: center;
+  color: var(---color-2--);
+  font-weight: 700;
+  font-family: "Bangers", sans-serif;
+  font-size: 46px;
+  padding: 1rem;
+}
+
+.feature h1 span {
+  color: var(---color-1--);
+}
+
+.features {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 25px;
+}
+
+.card {
+  width: 19.5rem;
+  height: 15rem;
+  padding: 2rem;
+  background-color: var(---color-3--);
+  color: var(---color-2--);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+
+.card h3 {
+  font-family: "Bangers";
+  font-size: 2rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+.features-heading {
+  text-align: center;
+  font-family: "Roboto";
+  font-size: 1.25rem;
+  font-style: normal;
+  font-weight: 400;
+  margin-bottom: 2rem;
+  line-height: normal;
+}
+
+.features-body {
+  color: #fff;
+  text-align: center;
+  font-family: "Roboto";
+  font-size: 0.875rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  padding-bottom: 2rem;
+  display: none;
+}
+.card:hover {
+  background-color: var(---color-4--);
+}
+
+.card:hover .features-body {
+  display: block;
+  transition: 1s ease-in-out;
+}
+
+/* ABOUT-US */
+.about-us {
+  margin: 2rem;
+  text-align: center;
+  color: var(---color-2--);
+}
+
+.about-us h3 {
+  color: #fff;
+  font-family: "Bangers";
+  font-size: 3rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+.about-us h3 span {
+  color: var(---color-1--);
+  font-family: "Bangers";
+  font-size: 3rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 2;
+}
+
+.about-us p {
+  text-align: justify;
+  font-family: Roboto;
+  font-size: 1.5rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  margin-top: 2rem;
+}
+
+.rug-graph {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 25px;
+}
+
+.rug-graph > h1 {
+  font-family: Bangers;
+  font-size: 3rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  color: var(---color-2--);
+}
+
+.rug-graph h1 span {
+  color: var(---color-1--);
+}
+
+.pie-charts {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 50px;
+}
+
+footer {
+  border-top: 1px solid var(---color-2--);
+  margin-top: 2rem;
+  height: 50px;
+  color: var(---color-2--);
+  padding: 1rem;
+}
+
+.footer-items > h3 {
+  font-family: Roboto;
+  font-size: 1rem;
+  font-style: normal;
+  font-weight: 300;
+  line-height: normal;
+}
