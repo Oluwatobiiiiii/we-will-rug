@@ -259,4 +259,14 @@ footer {
 
 .rug-pull-social {
   margin-left: auto;
+  gap: 25px;
+  display: flex;
+}
+
+.twitter {
+  cursor: pointer;
+}
+
+.telegram {
+  cursor: pointer;
 }

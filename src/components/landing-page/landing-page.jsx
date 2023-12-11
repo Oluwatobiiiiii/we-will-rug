@@ -115,16 +115,22 @@ const LandingPage = () => {
           </div>
 
           <div className="rug-pull-social">
-            <FontAwesomeIcon
-              icon={faXTwitter}
-              size="2xl"
-              style={{ color: "#ffffff" }}
-            />
-            <FontAwesomeIcon
-              icon={faTelegram}
-              size="2xl"
-              style={{ color: "#ffffff" }}
-            />
+            <a href="https://twitter.com/WeWillRug?t=KNtosFl1w3fc9Jrw3ocmGQ&s=09">
+              <FontAwesomeIcon
+                icon={faXTwitter}
+                size="2xl"
+                className="twitter"
+                style={{ color: "#ffffff" }}
+              />
+            </a>
+            <a href="https://t.me/WeWillRug">
+              <FontAwesomeIcon
+                icon={faTelegram}
+                size="2xl"
+                className="telegram"
+                style={{ color: "#ffffff" }}
+              />
+            </a>
           </div>
         </div>
       </footer>
