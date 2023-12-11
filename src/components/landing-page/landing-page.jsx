@@ -12,7 +12,7 @@ const features = [
     body: " Once you've assessed the project, choose whether you believe it will rug or not",
   },
   {
-    heading: "Claim your reqards",
+    heading: "Claim your rewards",
     body: "When the 24-hour pool period concludes, we determine the winning pool. Users who bet on the correct outcome share the pool funds proportionally based on their contribution. ",
   },
 ];
