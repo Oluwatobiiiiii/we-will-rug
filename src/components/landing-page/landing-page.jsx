@@ -1,4 +1,7 @@
 import "./landing-page.css";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faXTwitter } from "@fortawesome/free-brands-svg-icons";
+import { faTelegram } from "@fortawesome/free-brands-svg-icons";
 
 const navbar = ["Home", "About Us", "Contact"];
 const features = [
@@ -107,7 +110,28 @@ const LandingPage = () => {
 
       <footer id="Contact">
         <div className="footer-items">
-          <h3>Copyright. All Rights Reserved</h3>
+          <div className="copy-right">
+            <h3>Copyright. All Rights Reserved</h3>
+          </div>
+
+          <div className="rug-pull-social">
+            <a href="https://twitter.com/WeWillRug?t=KNtosFl1w3fc9Jrw3ocmGQ&s=09">
+              <FontAwesomeIcon
+                icon={faXTwitter}
+                size="2xl"
+                className="twitter"
+                style={{ color: "#ffffff" }}
+              />
+            </a>
+            <a href="https://t.me/WeWillRug">
+              <FontAwesomeIcon
+                icon={faTelegram}
+                size="2xl"
+                className="telegram"
+                style={{ color: "#ffffff" }}
+              />
+            </a>
+          </div>
         </div>
       </footer>
     </div>
