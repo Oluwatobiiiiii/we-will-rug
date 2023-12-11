@@ -2,7 +2,7 @@
 
 .navbar {
   margin: 0 2rem 2rem 2rem;
-  max-width: 1200px;
+  /* max-width: 1750px; */
   background-image: url("/hero-background.svg");
   background-repeat: no-repeat;
   background-position: center;
@@ -250,4 +250,13 @@ footer {
   font-style: normal;
   font-weight: 300;
   line-height: normal;
+}
+
+.footer-items {
+  display: flex;
+  align-items: center;
+}
+
+.rug-pull-social {
+  margin-left: auto;
 }
