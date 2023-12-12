@@ -86,12 +86,11 @@ const LandingPage = () => {
           <p>
             In the ever-evolving world of cryptocurrency, rug pulls have become
             a widespread problem, leaving unsuspecting investors with
-            significant losses.
-          </p>
-          <p>
-            WeWillRug is here to change that. Our innovative platform leverages
+            significant losses.WeWillRug is here to change that. Our innovative platform leverages
             the power of blockchain technology and predictive markets to empower
             the community to combat rug pulls and profit from their insights.
+          </p>
+          <p>
           </p>
         </div>
       </section>
