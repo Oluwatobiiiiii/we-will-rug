@@ -33,11 +33,17 @@ nav {
   margin-right: auto;
 }
 .navs li a {
-  color: var(--Grayish-Violet);
-  font-weight: 700;
-  font-size: 1.1rem;
+  font-family: Roboto;
+  font-size: 1rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
   color: var(---color-2--);
   text-decoration: none;
+}
+
+.navs li a:hover {
+  border-bottom: 3px solid var(---color-1--);
 }
 
 .cta-btn {
