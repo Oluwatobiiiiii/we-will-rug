@@ -1,4 +1,8 @@
 import "./landing-page.css";
+import logo from "../../assets/logo.svg";
+import menu from "../../assets/harmburger-btn.svg";
+import { useState, useRef } from "react";
+import close from "../../assets/icon-close.svg";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faXTwitter } from "@fortawesome/free-brands-svg-icons";
 import { faTelegram } from "@fortawesome/free-brands-svg-icons";
@@ -21,32 +25,40 @@ const features = [
 ];
 
 const LandingPage = () => {
+  const [navBtn, setNavBtn] = useState(menu);
+  const navRef = useRef();
+  const showNavBar = () => {
+    navRef.current.classList.toggle("responsive_nav");
+    if (navBtn === menu) {
+      setNavBtn(close);
+    } else {
+      setNavBtn(menu);
+    }
+  };
   return (
     <div className="landing" id="Home">
-      <section className="navbar">
-        <div className="nav">
+      <section className="bg">
+        <div className="Navbar">
           <div className="logo">
-            <img src="logo.svg" alt="we-will-rug-logo" />
+            <img src={logo} alt="" />
           </div>
-          <div className="nav-links">
-            <ul className="navbar-links">
+          <nav ref={navRef} className="flex">
+            <ul className="navs flex">
               {navbar.map((nav, key) => (
-                <li className="link" key={key}>
-                  <a href={`#${nav}`} className="link">
-                    {nav}
-                  </a>
+                <li key={key}>
+                  <a href={`#${nav}`}>{nav}</a>
                 </li>
               ))}
             </ul>
-          </div>
-          {/* Navbar-btn */}
-          <div className="navbar-btn">
-            <button className="cta-launch">
-              <a href="#" className="cta-launch-link">
-                Launch Dapp
-              </a>
-            </button>
-          </div>
+            <div className="buttons flex">
+              <button className="cta-btn">
+                <a href="#">Launch Dapp</a>
+              </button>
+            </div>
+          </nav>
+          <button className="nav-btn" onClick={showNavBar}>
+            <img className="nav-icon" src={navBtn} alt="" />
+          </button>
         </div>
 
         {/* HOME SECTION */}
@@ -82,7 +94,7 @@ const LandingPage = () => {
           <h3>
             ABOUT <span>US</span>
           </h3>
-          <img src="about-us.svg" alt="about-us" />
+          <img src="about-us.svg" className="about-img" alt="about-us" />
           <p>
             In the ever-evolving world of cryptocurrency, rug pulls have become
             a widespread problem, leaving unsuspecting investors with
@@ -101,8 +113,14 @@ const LandingPage = () => {
             TOKEN<span>ONMICS</span>
           </h1>
           <div className="pie-charts">
-            <img src="pie-chart.svg" alt="pie-chart" />
-            <img src="details_of_pie_chart.svg" alt="details_of_pie_chart" />
+            <img src="pie-chart.svg" className="pie" alt="pie-chart" />
+            <div className="details">
+              <img
+                src="details_of_pie_chart.svg"
+                className="details"
+                alt="details_of_pie_chart"
+              />
+            </div>
           </div>
         </div>
       </section>
