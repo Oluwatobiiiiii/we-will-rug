@@ -254,6 +254,14 @@ nav {
   transition: 1s ease-in-out;
 }
 
+.more {
+  font-family: "Roboto";
+}
+
+.card:hover .more {
+  display: none;
+}
+
 /* ABOUT-US */
 .about-us {
   margin: 2rem;
@@ -281,7 +289,7 @@ nav {
 
 .about-us p {
   text-align: justify;
-  font-family: Roboto;
+  font-family: "Roboto";
   font-size: 1.5rem;
   font-style: normal;
   font-weight: 400;
@@ -372,7 +380,8 @@ footer {
 
   .about-us p {
     text-align: center;
-    font-size: 1.3rem;
+    font-family: Roboto;
+    font-size: 1rem;
     font-style: normal;
     font-weight: 400;
     line-height: normal;

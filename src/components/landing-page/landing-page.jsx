@@ -9,18 +9,25 @@ import { faTelegram } from "@fortawesome/free-brands-svg-icons";
 
 const navbar = ["Home", "About Us", "Contact"];
 const features = [
-  { heading: "Go to the WeWillRug Dapp", body: "" },
+  {
+    heading: "Go to the WeWillRug Dapp",
+    body: "",
+    section: "Click to see more",
+  },
   {
     heading: "Explore Predictions",
     body: "Keep an eye on the platform for upcoming predictions. These will be projects recently adding liquidity, automatically creating pools for users to bet on rug or no rug outcomes.",
+    section: "Click to see more",
   },
   {
     heading: "Place Your Bet",
     body: " Once you've assessed the project, choose whether you believe it will rug or not",
+    section: "Click to see more",
   },
   {
     heading: "Claim your rewards",
     body: "When the 24-hour pool period concludes, we determine the winning pool. Users who bet on the correct outcome share the pool funds proportionally based on their contribution. ",
+    section: "Click to see more",
   },
 ];
 
@@ -85,6 +92,7 @@ const LandingPage = () => {
               <h3>STEP {index + 1}</h3>
               <p className="features-heading">{ele.heading}</p>
               <p className="features-body">{ele.body}</p>
+              <p className="more">{ele.section}</p>
             </div>
           ))}
         </div>
@@ -98,12 +106,14 @@ const LandingPage = () => {
           <p>
             In the ever-evolving world of cryptocurrency, rug pulls have become
             a widespread problem, leaving unsuspecting investors with
-            significant losses.WeWillRug is here to change that. Our innovative platform leverages
+            significant losses.
+          </p>
+          <p>
+            WeWillRug is here to change that. Our innovative platform leverages
             the power of blockchain technology and predictive markets to empower
             the community to combat rug pulls and profit from their insights.
           </p>
-          <p>
-          </p>
+          <p></p>
         </div>
       </section>
 
