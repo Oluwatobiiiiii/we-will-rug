@@ -334,8 +334,8 @@ footer {
   padding: 1rem;
 }
 
-.footer-items > h3 {
-  font-family: Roboto;
+.footer-items h3 {
+  font-family: "Roboto";
   font-size: 1rem;
   font-style: normal;
   font-weight: 300;
