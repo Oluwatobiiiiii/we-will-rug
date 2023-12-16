@@ -378,6 +378,10 @@ footer {
     display: none;
   }
 
+  .details {
+    width: 300px;
+  }
+
   .about-us p {
     text-align: center;
     font-family: Roboto;
@@ -424,5 +428,9 @@ footer {
 
   .navbar-btn {
     margin-left: auto;
+  }
+
+  .copy-right h3 {
+    font-size: 0.9rem;
   }
 }
